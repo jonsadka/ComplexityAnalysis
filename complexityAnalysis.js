@@ -19,8 +19,13 @@ var doSomething = function(){
 }
 
 // How many iterations does the first loop go through?
+  // n 
 // How many iterations does the second loop go through?
+  // n
 // What's the time complexity?
+  // Linear.  There are two for loops, but they are not nested
+  // within each other-- this creates a time complexity of O(2n),
+  // but is still classified as linear.
 
 
 // --------------- Problem 2 ---------------
@@ -34,8 +39,13 @@ var nestedLoops = function(){
 }
 
 // How many iterations does the first loop go through?
+  // n
 // How many iterations does the second loop go through?
+  // n
 // What's the time complexity?
+  // n squared (polynomial/ quadratic)
+  // since the loops are nested, the inner loop goes through
+  // n iterations n times, which is polynomial.
 
 
 // --------------- Problem 3 ---------------
@@ -49,7 +59,9 @@ var retrieve = function(key, array){
 }
 
 // What's the time complexity?
-
+  // Linear.
+  // The number of iterations the for loops executes 
+  // is dependent on the length of key
 
 
 /* Perhaps take a break here to go through complexityApplication.js */
