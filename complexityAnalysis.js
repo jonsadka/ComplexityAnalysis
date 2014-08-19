@@ -80,8 +80,13 @@ Array.prototype.contains = function(target){
 }
 
 // What's the time complexity when used on unsorted arrays?
+              // Linear
 //            What about on sorted arrays?
+              // Logarithmic because you can start in the middle
+              // and keep checking the middles
 //            How about overall?
+              // Array.prototype.contains as defined above
+              // has a linear time complexity
 
 // How does that function compare to this one:
 
@@ -92,6 +97,10 @@ var contains = function(array, target){
   return false;
 }
 
+  // They're the same-- this code might look nicer, but the 
+  // implementation fo indexOf still requires iterating over 
+  // every element in the array to find the next index.
+  // This function is also a linear time function.
 
 // --------------- Problem 5 ---------------
 
